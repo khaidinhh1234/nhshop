@@ -1,0 +1,172 @@
+@use "_mixin" as m;
+$font-poppins: "Poppins", sans-serif;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  font-family: $font-poppins;
+}
+
+.container {
+  max-width: 1268px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  &-info {
+    @include m.breakpoint(sm) {
+      width: 400px;
+    }
+    @include m.breakpoint(md) {
+      width: 600px;
+    }
+    @include m.breakpoint(lg) {
+      width: 800px;
+    }
+  }
+  &-close {
+    display: grid;
+    justify-items: end;
+    margin-left: 20px;
+  }
+  &-form {
+    margin: 17px 0;
+  }
+  &-title {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 30px;
+    color: #b88e2f;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+  &-username {
+    @include m.breakpoint(sm) {
+      width: 600px;
+      margin-left: 35px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+
+    @include m.breakpoint(md) {
+      width: 600px;
+      margin-left: 85px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+    @include m.breakpoint(lg) {
+      width: 600px;
+      margin-left: 100px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+  }
+  &-password {
+    width: 600px;
+
+    height: 105px;
+    margin-bottom: 15px;
+    @include m.breakpoint(sm) {
+      width: 600px;
+      margin-left: 35px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+
+    @include m.breakpoint(md) {
+      width: 600px;
+      margin-left: 85px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+    @include m.breakpoint(lg) {
+      width: 600px;
+      margin-left: 100px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+  }
+  &-label {
+    display: block;
+    font-size: 22px;
+    color: #b88e2f;
+  }
+
+  &-input {
+    width: 200px;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 15px;
+    @include m.breakpoint(sm) {
+      width: 300px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 15px;
+    }
+    @include m.breakpoint(md) {
+      width: 400px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 15px;
+    }
+    @include m.breakpoint(lg) {
+      width: 600px;
+      height: 55px;
+      padding: 0 20pxc;
+      border-radius: 15px;
+    }
+  }
+  &-one {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-btn-one {
+    width: 146px;
+    height: 68px;
+    border-radius: 20px;
+    background: #f9f1e7;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+  }
+  &-btn-link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  &-face {
+    @include m.flex(2, 137px);
+    justify-content: center;
+  }
+
+  &-btn-face {
+    width: 180px;
+    height: 68px;
+    border-radius: 20px;
+    background: #0171d3;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  &-btn-goo {
+    width: 180px;
+    height: 68px;
+    border-radius: 20px;
+    background: #ffff;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  &-btn-facebook {
+    padding: 0 10px;
+  }
+  &-btn-google {
+    padding: 0 10px;
+  }
+}
