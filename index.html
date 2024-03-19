@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giỏ Hàng</title>
+    <title>Vite App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,8 +15,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-
-    <link rel="stylesheet" href="./public/scss/cart.scss" />
+    <link rel="stylesheet" href="./public/scss/Trangchu.scss" />
   </head>
   <body>
     <header class="header">
@@ -68,61 +68,289 @@
     </header>
     <section class="banner">
       <img
-        src="https://picsum.photos/id/204/1440/500"
+        src="https://picsum.photos/id/376/1440/500"
         alt=""
         class="banner__img"
       />
     </section>
-    <section class="cart">
+    <!--End .banner-->
+    <section class="news">
       <div class="container">
-        <div class="cart-info">
-          <div class="cart-table">
-            <div class="cart-table-title">
-              <span class="cart-table-title__name">Product</span>
-              <span class="cart-table-title__price">Price</span
-              ><span class="cart-table-title__name">Quantity</span
-              ><span class="cart-table-title__name">Subtotal</span>
-            </div>
-            <div class="cart-table-body">
-              <div class="cart-table_img">
+        <div class="section-heading">
+          <h2 class="section-heading__title">New</h2>
+        </div>
+        <div class="section-body">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
                 <img
-                  src="https://picsum.photos/id/16/105/105"
+                  src="https://picsum.photos/id/101/300/300"
                   alt=""
-                  class="cart-table_image"
+                  class="product__thumbnail"
                 />
+                <span class="product-sale">-30%</span>
               </div>
-              <span class="cart-table_itemA">Asgaard sofa</span>
-              <span class="cart-table_itemB">25.000.000đ</span>
-              <span class="cart-table_itemC">1</span>
-
-              <span class="cart-table_itemD">25.000.000đ</span>
-              <span class="cart-table_itemE"
-                ><a href="#"
-                  ><img src="./public/images/cart/delete.svg" alt="" /></a
-              ></span>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old">3.500.000đ</del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
             </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/133/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                /><span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Leviosa</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">2.500.000đ</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/123/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">-50%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Lolito</a>
+                </h3>
+                <a href="" class="product__category">Luxury big sofa</a>
+                <div class="product-price">
+                  <span class="product-price__new">7.000.000đ</span>
+                  <del class="product-price__old">14.000.000đ</del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/312/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Respira</a>
+                </h3>
+                <a href="" class="product__category"
+                  >Outdoor bar table and stool</a
+                >
+                <div class="product-price">
+                  <span class="product-price__new">5.000.000</span>
+                  <del class="product-price__old"></del>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  <a href="detail.html" class="product-action__link">
+                    Quick View</a
+                  >
+                </button>
+                <button class="btn product-action__addtocart">
+                  <a href="cart.html" class="product-action__link">
+                    Add to Cart</a
+                  >
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
           </div>
-          <div class="cart-totals">
-            <div class="cart-totals-title">Cart Totals</div>
-            <div class="cart-totals-info">
-              <div class="cart-totals_item">
-                <span class="cart-totals_name">Subtotal</span>
-                <span class="cart-totals_name">Total</span>
-              </div>
-              <div class="cart-totals_item">
-                <span class="cart-totals_priceA">25.000.000đ</span>
-                <span class="cart-totals_priceB">25.000.000đ</span>
-              </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <hr />
+    </div>
+    <!--End .news-->
+    <section class="shop">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Shop</h2>
+        </div>
+        <div class="section-body">
+          <div class="shops">
+            <div class="shop-item">
+              <a href="" class="shop__link"
+                ><img
+                  src="https://picsum.photos/id/12/665/500"
+                  alt=""
+                  class="shop__image"
+              /></a>
             </div>
-            <div class="cart-totals">
-              <button class="cart-totals_btn">
-                <a href="./checkout.html" class="cart-totals_link">Check Out</a>
-              </button>
+            <div class="shop-item">
+              <a href="" class="shop__link"
+                ><img
+                  src="https://picsum.photos/id/13/665/500"
+                  alt=""
+                  class="shop__image"
+              /></a>
+            </div>
+            <div class="shop-item">
+              <a href="" class="shop__link"
+                ><img
+                  src="https://picsum.photos/id/14/665/500"
+                  alt=""
+                  class="shop__image"
+              /></a>
+            </div>
+            <div class="shop-item">
+              <a href="" class="shop__link"
+                ><img
+                  src="https://picsum.photos/id/15/665/500"
+                  alt=""
+                  class="shop__image"
+              /></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--End .shop-->
+    <section class="blog">
+      <div class="container">
+        <div class="section-heading section-blog-heading">
+          <h2 class="section-heading__title">Blog</h2>
+        </div>
+        <div class="section-body">
+          <div class="post-list">
+            <div class="post-item">
+              <div class="post-image">
+                <a href="">
+                  <img
+                    src="https://picsum.photos/id/16/665/250"
+                    alt=""
+                    class="post__thumbnail"
+                  />
+                </a>
+              </div>
+              <div class="post-info">
+                <h3 class="post__title">
+                  <a href="" class="post__link"
+                    >THE ULTIMATE SOFA BUYING GUIDE</a
+                  >
+                </h3>
+                <p class="post__excerpt">
+                  The versatility of our living space is more crucial than ever.
+                  But buying a sofa might be a difficult undertaking. Your needs
+                  and the size of your living area will determine everything,
+                  However, don’t worry, were are here to help you
+                </p>
+                <a href="" class="post__readmore">Readmore</a>
+              </div>
+            </div>
+            <!--End .post-item-->
+            <div class="post-item">
+              <div class="post-image">
+                <a href="">
+                  <img
+                    src="https://picsum.photos/id/17/665/250"
+                    alt=""
+                    class="post__thumbnail"
+                  />
+                </a>
+              </div>
+              <div class="post-info">
+                <h3 class="post__title">
+                  <a href="" class="post__link"
+                    >THE ULTIMATE SOFA BUYING GUIDE</a
+                  >
+                </h3>
+                <p class="post__excerpt">
+                  The versatility of our living space is more crucial than ever.
+                  But buying a sofa might be a difficult undertaking. Your needs
+                  and the size of your living area will determine everything,
+                  However, don’t worry, were are here to help you
+                </p>
+                <a href="" class="post__readmore">Readmore</a>
+              </div>
+            </div>
+            <!--End .post-item-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End .blog-->
+
     <section class="services">
       <div class="container-fluid">
         <div class="service-list">
