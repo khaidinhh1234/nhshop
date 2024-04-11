@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "name": "khai1111",
+      "image": "https://picsum.photos/id/32/300/300",
+      "price": "100000",
+      "quality": "12",
+      "discount": "30",
+      "description": "123",
+      "id": "3"
+    },
+    {
+      "name": "Nguyễn Khải123",
+      "image": "https://picsum.photos/id/2/300/300",
+      "price": "199000",
+      "quality": "123",
+      "discount": "10",
+      "description": "12313",
+      "id": "4",
+      "featured": true
+    },
+    {
+      "name": "khai1111",
+      "image": "https://picsum.photos/id/31/300/300",
+      "price": "958000",
+      "quality": "133",
+      "discount": "50",
+      "description": "",
+      "id": "5",
+      "featured": false
+    },
+    {
+      "name": "123",
+      "image": "https://picsum.photos/id/12/300/300",
+      "price": "1223344",
+      "quality": "759000",
+      "description": "hay",
+      "discount": "10",
+      "id": "6",
+      "featured": false
+    }
+  ]
+}
